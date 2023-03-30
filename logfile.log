@@ -1,0 +1,9 @@
+[2023-03-30 22:56:53,578.578] INFO [9464] - Database connection is successfull!
+[2023-03-30 22:56:53,578.578] INFO [9464] - Started server process [7256]
+[2023-03-30 22:56:53,578.578] INFO [9464] - Waiting for application startup.
+[2023-03-30 22:56:53,578.578] INFO [9464] - Application startup complete.
+[2023-03-30 22:56:53,594.594] INFO [9464] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-03-30 22:57:01,377.377] INFO [9464] - Shutting down
+[2023-03-30 22:57:01,480.480] INFO [9464] - Waiting for application shutdown.
+[2023-03-30 22:57:01,481.481] INFO [9464] - Application shutdown complete.
+[2023-03-30 22:57:01,481.481] INFO [9464] - Finished server process [7256]
