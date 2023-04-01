@@ -2,6 +2,7 @@ from random import randrange
 from typing import Optional
 from fastapi import FastAPI, Response, HTTPException, status, Depends
 from fastapi.params import Body
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import psycopg2
 from psycopg2.extras import RealDictCursor #to show column name
