@@ -7,9 +7,9 @@ from pydantic import BaseModel
 import psycopg2
 from psycopg2.extras import RealDictCursor #to show column name
 import time
-from app import models
+from . import models
 # from models import models
-from app.databse import engine, get_db
+from .databse import engine, get_db
 from sqlalchemy.orm import Session
 import logging
 #Server running command - uvicorn app.main:app --reload
