@@ -7,3 +7,31 @@
 [2023-03-30 22:57:01,480.480] INFO [9464] - Waiting for application shutdown.
 [2023-03-30 22:57:01,481.481] INFO [9464] - Application shutdown complete.
 [2023-03-30 22:57:01,481.481] INFO [9464] - Finished server process [7256]
+[2023-04-27 17:09:01,900.900] INFO [5324] - Database connection is successfull!
+[2023-04-27 17:09:01,915.915] INFO [5324] - Started server process [7812]
+[2023-04-27 17:09:01,915.915] INFO [5324] - Waiting for application startup.
+[2023-04-27 17:09:01,931.931] INFO [5324] - Application startup complete.
+[2023-04-27 17:09:01,931.931] INFO [5324] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 17:10:37,431.431] INFO [5324] - 127.0.0.1:56455 - "GET / HTTP/1.1" 200
+[2023-04-27 17:10:38,086.086] INFO [5324] - 127.0.0.1:56455 - "GET /favicon.ico HTTP/1.1" 404
+[2023-04-27 17:10:45,418.418] INFO [5324] - 127.0.0.1:56456 - "GET /posts HTTP/1.1" 200
+[2023-04-27 17:10:55,237.237] INFO [5324] - 127.0.0.1:56469 - "GET /posts/1 HTTP/1.1" 200
+[2023-04-27 17:11:11,964.964] INFO [5324] - 127.0.0.1:56476 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-27 17:11:35,944.944] INFO [5324] - 127.0.0.1:56488 - "GET /posts/ HTTP/1.1" 307
+[2023-04-27 17:11:36,075.075] INFO [5324] - 127.0.0.1:56488 - "GET /posts HTTP/1.1" 200
+[2023-04-27 17:12:07,737.737] INFO [5324] - Shutting down
+[2023-04-27 17:12:07,839.839] INFO [5324] - Waiting for application shutdown.
+[2023-04-27 17:12:07,839.839] INFO [5324] - Application shutdown complete.
+[2023-04-27 17:12:07,839.839] INFO [5324] - Finished server process [7812]
+[2023-04-27 17:25:14,565.565] INFO [3036] - Database connection is successfull!
+[2023-04-27 17:25:14,611.611] INFO [3036] - Started server process [13420]
+[2023-04-27 17:25:14,612.612] INFO [3036] - Waiting for application startup.
+[2023-04-27 17:25:14,612.612] INFO [3036] - Application startup complete.
+[2023-04-27 17:25:14,612.612] INFO [3036] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 17:28:57,821.821] INFO [3036] - 127.0.0.1:56775 - "GET /posts HTTP/1.1" 200
+[2023-04-27 17:29:02,189.189] INFO [3036] - 127.0.0.1:56780 - "GET /posts HTTP/1.1" 200
+[2023-04-27 17:29:08,338.338] INFO [3036] - 127.0.0.1:56781 - "GET /posts/1 HTTP/1.1" 200
+[2023-04-27 17:29:17,090.090] INFO [3036] - Shutting down
+[2023-04-27 17:29:17,201.201] INFO [3036] - Waiting for application shutdown.
+[2023-04-27 17:29:17,201.201] INFO [3036] - Application shutdown complete.
+[2023-04-27 17:29:17,201.201] INFO [3036] - Finished server process [13420]

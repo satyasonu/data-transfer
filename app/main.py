@@ -51,11 +51,11 @@ while True:
 
 
 @app.get("/")
-def root():
+async def root():
     return {"message": "Hello Panda"}
 
 @app.get("/sqlalchemy")
-def test_posts(response: Response,db: Session = Depends(get_db)):
+async def test_posts(response: Response,db: Session = Depends(get_db)):
     try:
         posts = db.query(models.Post).all()
         # print(response)
@@ -67,14 +67,14 @@ def test_posts(response: Response,db: Session = Depends(get_db)):
 
 
 @app.get("/posts")
-def get_posts(db: Session = Depends(get_db)):
+async def get_posts(db: Session = Depends(get_db)):
     # cursor.execute("""SELECT * FROM posts ORDER BY id ASC;""")
     # posts = cursor.fetchall()
     posts = db.query(models.Post).all()
     return {"data":posts}
 
 @app.post("/posts", status_code=status.HTTP_201_CREATED)
-def create_posts(post:Post, db: Session = Depends(get_db)):
+async def create_posts(post:Post, db: Session = Depends(get_db)):
     # cursor.execute("""INSERT INTO posts (title, content, published) VALUES (%s,%s,%s) RETURNING *"""%
     #                (post.title, post.content, post.published ))
     # new_post = cursor.fetchone()
@@ -86,7 +86,7 @@ def create_posts(post:Post, db: Session = Depends(get_db)):
     return {"message": new_post}
 
 @app.get("/posts/latest")
-def get_latest_post(db: Session = Depends(get_db)):
+async def get_latest_post(db: Session = Depends(get_db)):
     # cursor.execute("""SELECT * FROM posts ORDER BY id ASC;""")
     # posts = cursor.fetchall()
     posts = db.query(models.Post).all()
@@ -94,7 +94,7 @@ def get_latest_post(db: Session = Depends(get_db)):
     return {"Latest Post": latest_post}
 
 @app.get("/posts/{id}")
-def get_post(id: int, db: Session = Depends(get_db)):
+async def get_post(id: int, db: Session = Depends(get_db)):
     # cursor.execute("""SELECT * FROM posts WHERE id = (%s);"""% (str(id)))
     # one_post = cursor.fetchone()
     one_post = db.query(models.Post).filter(models.Post.id == id).first()
@@ -103,7 +103,7 @@ def get_post(id: int, db: Session = Depends(get_db)):
     return {"post_detail": one_post}
 
 @app.delete("/posts/{id}")
-def delete_post(id : int, db: Session = Depends(get_db)):
+async def delete_post(id : int, db: Session = Depends(get_db)):
     # cursor.execute("""DELETE FROM posts WHERE id = (%s) RETURNING *"""% (str(id)))
     # delete_post = cursor.fetchone()
     # conn.commit()
@@ -116,7 +116,7 @@ def delete_post(id : int, db: Session = Depends(get_db)):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 @app.put("/posts/{id}")
-def update_post(id: int,post: Post, db: Session = Depends(get_db)):
+async def update_post(id: int,post: Post, db: Session = Depends(get_db)):
     # cursor.execute("""UPDATE posts SET title= (%s), content= (%s), published= (%s) WHERE id = (%s) RETURNING *"""% (post.title, post.content, post.published, (str(id))))
     # updated_post = cursor.fetchone()
     # conn.commit()
