@@ -2,8 +2,6 @@
 
 # docker run -d --name fastapi-container  -p 8000:8000 fastapi-image
 
-
-
 FROM python:3.10
 
 # Setup working directory
