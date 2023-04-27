@@ -1,0 +1,83 @@
+[2023-04-27 21:46:25,271.271] INFO [2156] - Database connection is successfull!
+[2023-04-27 21:46:25,271.271] INFO [2156] - Started server process [6476]
+[2023-04-27 21:46:25,271.271] INFO [2156] - Waiting for application startup.
+[2023-04-27 21:46:25,286.286] INFO [2156] - Application startup complete.
+[2023-04-27 21:46:25,286.286] INFO [2156] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 21:47:03,496.496] INFO [2156] - 127.0.0.1:58249 - "GET / HTTP/1.1" 200
+[2023-04-27 21:47:04,793.793] INFO [2156] - 127.0.0.1:58249 - "GET /favicon.ico HTTP/1.1" 404
+[2023-04-27 21:47:11,528.528] INFO [2156] - Shutting down
+[2023-04-27 21:47:11,644.644] INFO [2156] - Waiting for application shutdown.
+[2023-04-27 21:47:11,644.644] INFO [2156] - Application shutdown complete.
+[2023-04-27 21:47:11,644.644] INFO [2156] - Finished server process [6476]
+[2023-04-27 21:49:00,233.233] INFO [10280] - Database connection is successfull!
+[2023-04-27 21:49:00,248.248] INFO [10280] - Started server process [1904]
+[2023-04-27 21:49:00,248.248] INFO [10280] - Waiting for application startup.
+[2023-04-27 21:49:00,248.248] INFO [10280] - Application startup complete.
+[2023-04-27 21:49:00,248.248] INFO [10280] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 21:49:39,104.104] INFO [10280] - Shutting down
+[2023-04-27 21:49:39,212.212] INFO [10280] - Waiting for application shutdown.
+[2023-04-27 21:49:39,212.212] INFO [10280] - Application shutdown complete.
+[2023-04-27 21:49:39,212.212] INFO [10280] - Finished server process [1904]
+[2023-04-27 21:49:52,076.076] INFO [5136] - Database connection is successfull!
+[2023-04-27 21:49:52,091.091] INFO [5136] - Started server process [6476]
+[2023-04-27 21:49:52,091.091] INFO [5136] - Waiting for application startup.
+[2023-04-27 21:49:52,091.091] INFO [5136] - Application startup complete.
+[2023-04-27 21:49:52,091.091] INFO [5136] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 21:51:06,953.953] INFO [5136] - Shutting down
+[2023-04-27 21:51:07,062.062] INFO [5136] - Waiting for application shutdown.
+[2023-04-27 21:51:07,062.062] INFO [5136] - Application shutdown complete.
+[2023-04-27 21:51:07,062.062] INFO [5136] - Finished server process [6476]
+[2023-04-27 21:55:06,242.242] INFO [8248] - Database connection is successfull!
+[2023-04-27 21:55:06,304.304] INFO [8248] - Started server process [11288]
+[2023-04-27 21:55:06,304.304] INFO [8248] - Waiting for application startup.
+[2023-04-27 21:55:06,612.612] ERROR [8248] - Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\server.py", line 76, in serve
+    await self.startup(sockets=sockets)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\server.py", line 87, in startup
+    await self.lifespan.startup()
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\lifespan\on.py", line 56, in startup
+    await self.startup_event.wait()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\routing.py", line 686, in lifespan
+    await receive()
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\middleware\message_logger.py", line 62, in inner_receive
+    message = await receive()
+              ^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\lifespan\on.py", line 139, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[2023-04-27 21:58:37,144.144] INFO [8468] - Database connection is successfull!
+[2023-04-27 21:58:37,144.144] INFO [8468] - Started server process [7312]
+[2023-04-27 21:58:37,144.144] INFO [8468] - Waiting for application startup.
+[2023-04-27 21:58:37,144.144] INFO [8468] - Application startup complete.
+[2023-04-27 21:58:37,144.144] INFO [8468] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-27 21:58:49,309.309] INFO [8468] - Shutting down
+[2023-04-27 21:58:49,420.420] INFO [8468] - Waiting for application shutdown.
+[2023-04-27 21:58:49,420.420] INFO [8468] - Application shutdown complete.
+[2023-04-27 21:58:49,420.420] INFO [8468] - Finished server process [7312]

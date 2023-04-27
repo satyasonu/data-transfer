@@ -1,13 +1,13 @@
 FROM tiangolo/uvicorn-gunicorn:python3.9-alpine3.14
 LABEL maintainer="Satyabrata Sahoo <sbssunu1@gmail.com>"
 
-COPY ./app /app/api
+COPY ./app /app
 COPY ./requirements.txt /api/requirements.txt
 
 RUN pip install --no-cache-dir -r /api/requirements.txt
 
 ENV PYTHONPATH=/app
-WORKDIR /app/api
+WORKDIR /app
 
 EXPOSE 8000
 
