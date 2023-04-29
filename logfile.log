@@ -90,3 +90,152 @@ asyncio.exceptions.CancelledError
 [2023-04-27 23:16:02,177.177] INFO [9692] - Waiting for application shutdown.
 [2023-04-27 23:16:02,178.178] INFO [9692] - Application shutdown complete.
 [2023-04-27 23:16:02,179.179] INFO [9692] - Finished server process [11092]
+[2023-04-29 18:19:40,635.635] INFO [11684] - Database connection is successfull!
+[2023-04-29 18:19:40,753.753] INFO [11684] - Started server process [7344]
+[2023-04-29 18:19:40,753.753] INFO [11684] - Waiting for application startup.
+[2023-04-29 18:19:40,753.753] INFO [11684] - Application startup complete.
+[2023-04-29 18:19:40,768.768] INFO [11684] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-29 18:19:58,757.757] INFO [11684] - 127.0.0.1:51314 - "GET / HTTP/1.1" 200
+[2023-04-29 18:19:59,035.035] INFO [11684] - 127.0.0.1:51314 - "GET /favicon.ico HTTP/1.1" 404
+[2023-04-29 18:20:03,072.072] INFO [11684] - 127.0.0.1:51314 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:22:20,386.386] INFO [11684] - Shutting down
+[2023-04-29 18:22:20,503.503] INFO [11684] - Waiting for application shutdown.
+[2023-04-29 18:22:20,503.503] INFO [11684] - Application shutdown complete.
+[2023-04-29 18:22:20,503.503] INFO [11684] - Finished server process [7344]
+[2023-04-29 18:22:39,194.194] INFO [11880] - Database connection is successfull!
+[2023-04-29 18:22:39,209.209] INFO [11880] - Started server process [6696]
+[2023-04-29 18:22:39,209.209] INFO [11880] - Waiting for application startup.
+[2023-04-29 18:22:39,209.209] INFO [11880] - Application startup complete.
+[2023-04-29 18:22:39,209.209] INFO [11880] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-29 18:22:46,695.695] INFO [11880] - 127.0.0.1:51423 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:25:53,554.554] INFO [11880] - 127.0.0.1:51671 - "GET / HTTP/1.1" 200
+[2023-04-29 18:25:57,165.165] INFO [11880] - 127.0.0.1:51671 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:30:07,305.305] INFO [11880] - None:0 - "GET /main.8d89d19e5803961a3c09.hot-update.json HTTP/1.1" 404
+[2023-04-29 18:30:19,336.336] INFO [11880] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:30:21,121.121] INFO [11880] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:30:33,177.177] INFO [11880] - Shutting down
+[2023-04-29 18:30:33,288.288] INFO [11880] - Waiting for application shutdown.
+[2023-04-29 18:30:33,289.289] INFO [11880] - Application shutdown complete.
+[2023-04-29 18:30:33,289.289] INFO [11880] - Finished server process [6696]
+[2023-04-29 18:31:39,520.520] INFO [456] - Database connection is successfull!
+[2023-04-29 18:31:39,528.528] INFO [456] - Started server process [9444]
+[2023-04-29 18:31:39,529.529] INFO [456] - Waiting for application startup.
+[2023-04-29 18:31:39,530.530] INFO [456] - Application startup complete.
+[2023-04-29 18:31:39,532.532] INFO [456] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-29 18:32:11,350.350] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:32:11,838.838] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:43:01,677.677] INFO [456] - None:0 - "GET /posts/latest HTTP/1.1" 500
+[2023-04-29 18:43:01,679.679] ERROR [456] - Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\protocols\http\h11_impl.py", line 429, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\middleware\message_logger.py", line 86, in __call__
+    raise exc from None
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\uvicorn\middleware\message_logger.py", line 82, in __call__
+    await self.app(scope, inner_receive, inner_send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\applications.py", line 276, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\middleware\cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\routing.py", line 237, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\DevOps\frontend\pyfastapi\app\main.py", line 93, in get_latest_post
+    posts = db.query(models.Post).all()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\orm\query.py", line 2688, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\orm\query.py", line 2842, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\orm\session.py", line 2231, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\orm\session.py", line 2126, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\orm\context.py", line 292, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 1413, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\sql\elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 1841, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\sbssu\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\sqlalchemy\engine\default.py", line 920, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT posts.id AS posts_id, posts.title AS posts_title, posts.content AS posts_content, posts.published AS posts_published, posts.created_at AS posts_created_at 
+FROM posts]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2023-04-29 18:43:03,305.305] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:43:03,843.843] INFO [456] - None:0 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-29 18:43:03,956.956] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:43:04,412.412] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:43:04,843.843] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:46:52,013.013] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:46:52,273.273] INFO [456] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:46:55,595.595] INFO [456] - None:0 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-29 18:46:56,011.011] INFO [456] - None:0 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-29 18:47:31,009.009] INFO [456] - Shutting down
+[2023-04-29 18:47:31,124.124] INFO [456] - Waiting for application shutdown.
+[2023-04-29 18:47:31,124.124] INFO [456] - Application shutdown complete.
+[2023-04-29 18:47:31,124.124] INFO [456] - Finished server process [9444]
+[2023-04-29 18:47:47,769.769] INFO [10136] - Database connection is successfull!
+[2023-04-29 18:47:47,784.784] INFO [10136] - Started server process [7716]
+[2023-04-29 18:47:47,784.784] INFO [10136] - Waiting for application startup.
+[2023-04-29 18:47:47,784.784] INFO [10136] - Application startup complete.
+[2023-04-29 18:47:47,784.784] INFO [10136] - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2023-04-29 18:47:57,935.935] INFO [10136] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:47:58,319.319] INFO [10136] - None:0 - "GET /posts HTTP/1.1" 200
+[2023-04-29 18:48:00,028.028] INFO [10136] - None:0 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-29 18:48:00,284.284] INFO [10136] - None:0 - "GET /posts/latest HTTP/1.1" 200
+[2023-04-29 18:52:41,629.629] INFO [10136] - Shutting down
+[2023-04-29 18:52:41,738.738] INFO [10136] - Waiting for application shutdown.
+[2023-04-29 18:52:41,739.739] INFO [10136] - Application shutdown complete.
+[2023-04-29 18:52:41,740.740] INFO [10136] - Finished server process [7716]

@@ -71,7 +71,7 @@ async def test_posts(response: Response,db: Session = Depends(get_db)):
 async def get_posts(db: Session = Depends(get_db)):
     # cursor.execute("""SELECT * FROM posts ORDER BY id ASC;""")
     # posts = cursor.fetchall()
-    posts = db.query(models.Post).all()
+    posts = db.query(models.Post).order_by(models.Post.created_at.asc()).all()
     return {"data":posts}
 
 @app.post("/posts", status_code=status.HTTP_201_CREATED)
@@ -90,7 +90,7 @@ async def create_posts(post:Post, db: Session = Depends(get_db)):
 async def get_latest_post(db: Session = Depends(get_db)):
     # cursor.execute("""SELECT * FROM posts ORDER BY id ASC;""")
     # posts = cursor.fetchall()
-    posts = db.query(models.Post).all()
+    posts = db.query(models.Post).order_by(models.Post.created_at.asc()).all()
     latest_post = posts[len(posts)-1]
     return {"Latest Post": latest_post}
 
